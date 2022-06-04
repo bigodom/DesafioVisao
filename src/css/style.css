@@ -1,5 +1,6 @@
 :root {
     font-size: 62.5%; /*10px*/
+    --cor-primaria: #591623;
 }
 
 * {
@@ -9,6 +10,7 @@
     box-sizing: border-box;
     color: #D9B19A;
     font-size: 1.4rem;
+    background-color: var(--cor-primaria);
 }
 h1{
     font-size: 3.4rem;
