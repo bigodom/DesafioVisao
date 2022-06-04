@@ -3,7 +3,7 @@
     --cor-primaria: #591623;/*cor de fundo*/
 }
 
-* {
+body {
     font-family: 'DM Sans'; /*fonte*/
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ h1{
     font-size: 3.4rem;
     line-height: 130%;
 }
-.cabecalho{
-    font-size: larger;
+.sobre_nos{
+    width: 67.5rem;
+    background: #8C5E4D;
 }
