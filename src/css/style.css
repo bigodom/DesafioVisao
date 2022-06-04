@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'DM Sans'; /*fonte*/
+    font-family: 'Comfortaa',cursive; /*fonte*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +18,10 @@ h1{
     line-height: 130%;
 }
 .sobre_nos{
-    float: left;
+    display:flex;
     background: #8C5E4D;
+    text-align: center;
+}
+.imagem1{
+    display:right;
 }
