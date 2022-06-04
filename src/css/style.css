@@ -1,5 +1,5 @@
 :root {
-    font-size: 100%;
+    font-size: 62.5%;
 }
 
 * {
@@ -8,8 +8,9 @@
     padding: 0;
     box-sizing: border-box;
     color: #D9B19A;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+
 }
