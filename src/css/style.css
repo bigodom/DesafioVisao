@@ -18,6 +18,6 @@ h1{
     line-height: 130%;
 }
 .sobre_nos{
-    width: 67.5rem;
+    float: left;
     background: #8C5E4D;
 }
