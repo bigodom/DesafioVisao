@@ -1,7 +1,12 @@
+:root h1{
+    font-size: 150%;
+}
+
 * {
     font-family: 'DM Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #D9B19A;
+    font-size: 1rem;
 }
