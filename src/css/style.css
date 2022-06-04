@@ -22,9 +22,27 @@ h1{
 
 /*Principal*/
 
-.sobre_nos{
-    float: left;
+.principal .quem-somos{
     background: #8C5E4D;
+    display: flex;
+}
+
+.principal .quem-somos .informacoes{
+    width: 50%;
+}
+
+.principal .quem-somos .imagem{
+    width: 50%;
+}
+
+.principal .quem-somos .informacoes .titulo{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.principal .quem-somos .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 /*Rodape*/
