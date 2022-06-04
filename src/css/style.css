@@ -11,5 +11,5 @@
     font-size: 1.4rem;
 }
 h1{
-    font-size: 1.6rem;
+    font-size: 1.6rem;/*1.6 vezes a quantidade de pixels estabelecida em root*/
 }
