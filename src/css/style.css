@@ -1,6 +1,6 @@
 :root {
     font-size: 62.5%; /*10px*/
-    --cor-primaria: #591623;
+    --cor-primaria: #591623;/*cor de fundo*/
 }
 
 * {
