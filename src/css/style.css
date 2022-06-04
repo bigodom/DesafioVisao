@@ -13,6 +13,9 @@ body {
     background-color: var(--cor-primaria);
     text-align: center;
 }
+
+/* cabeçalho */
+
 .principal .empresa{
     font-size: 3.4rem;
     line-height: 130%;
@@ -20,4 +23,10 @@ body {
 .principal .sobre-nos{
     width: 67.5rem;
     background: #8C5E4D;
+}
+
+/* Rodapé */
+
+.rodape .navegacao .redes-sociais{
+    display: flex;
 }
