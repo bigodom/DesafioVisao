@@ -2,7 +2,6 @@
     font-size: 62.5%; /*10px*/
     --cor-primaria: #591623;/*cor de fundo*/
 }
-
 body {
     font-family: 'DM Sans'; /*fonte*/
     margin: 0;
@@ -13,11 +12,20 @@ body {
     background-color: var(--cor-primaria);
     text-align: center;
 }
+
+/*Cabecalho*/
+
 h1{
     font-size: 3.4rem;
     line-height: 130%;
 }
+
+/*Principal*/
+
 .sobre_nos{
     float: left;
     background: #8C5E4D;
 }
+
+/*Rodape*/
+
