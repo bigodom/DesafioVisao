@@ -13,7 +13,7 @@ body {
     background-color: var(--cor-primaria);
     text-align: center;
 }
-h1{
+.principal .empresa{
     font-size: 3.4rem;
     line-height: 130%;
 }
