@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta name="description" content="Site de imóveis, Sabrina">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="">
-            <img src="./src/imagem/logo.png" alt="logo" class="imagem">
-            <span class="empresa">Sabrina Imóveis</span>
-        </a>
 
+    <header class="cabecalho">
+        <a id = "nomeEmpresa" href="">
+            <img src="./src/imagem/logo.png" alt="logo" class="imagem">
+            <!-- <span class="empresa">Sabrina Imóveis</span> -->
+        </a>
+       
         <nav class="navegacao">
             <ul class="menu">
                 <li>
-                    <a href="#quem-somos">Quem Somos</a>
-                </li>
-                <li>
-                    <a href="#galeria">Galeria de Imagens</a>
-                </li>
-                <li>
-                    <a href="#agendamento">Agendamento</a>
-                </li>
-                <li>
-                    <a href="#suporte">Suporte</a>
-                </li>
+                    <div>
+                        <a id = "quem" href="#quem-somos" class="nav-item">Quem Somos</a>
+                
+                    </div>
+                    </li>
+                
+                    <li>
+                        <div>
+                        <a id = "galery" href="#galeria" class="nav-item">Galeria</a>
+                    </div>
+                    </li>
+                
+                    <li>
+                        <div>
+                      <a id = "agenda" href="#agendamento" class="nav-item">Agendamento</a>
+                    </div>
+                    </li>
+                
+                    <li>
+                        <div>
+                        <a id = "sup" href="#suporte" class="nav-item">Suporte</a>
+                    </div>
+                    </li>
+
             </ul>
         </nav>
+        <div id = "modal-cadastro" class="modal-container" tabindex="-1" role="dialog">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2 id="entre-em-contato" class="subtitulo">Entre em contato </h2>
+                    <div class="form-wrapper">
+                        <form id = "cadastro-form">
+                            <input type="text" class="input" placeholder="Nome">
+                            <input id = email type="email" class="input" placeholder="Email">
+                            <button id="cadastro" class="button">Cadastrar </button>
+                        </form>
+                        
+                        <img src="./src/imagem/logo.png" alt="logo" class="imagem">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <button id="pedido" class="button">PEDIDO</button>
+
     </header>
+    <div id="dividerContainer"><hr/></div>
+
     <main class="principal">
         <h1 id="empresa">Sabrina Imóveis</h1>
         <h2>Garantindo seu lar pelo melhor preço</h2>
-        <div class ="quem-somos">
+        <section class ="quem-somos">
             <div class="informacoes">
                 <h2 class="titulo">Quem Somos</h2>
                 <p class="texto">Prestamos serviço de locação de imóveis em João Monlevade há mais de 10 anos.<br> 
@@ -45,8 +84,8 @@
             </p>
             </div>
             
-            <img src="./src/imagem/image1.svg" class="imagem" alt="personagem">
-        </div>
+            <img src="./src/imagem/image1.webp" class="imagem" alt="personagem">
+        </section>
     </main>
     
 
@@ -67,6 +106,6 @@
 
         <p class="copyright">Todos os direitos reservados</p>
     </footer>
-    
+    <script src="./src/script.js"></script>
 </body>
 </html>

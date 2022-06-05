@@ -1,7 +1,12 @@
 :root {
     font-size: 62.5%; /*10px*/
     --cor-primaria: #591623;/*cor de fundo*/
+    height: auto;
 }
+html{
+    height: 100%;
+}
+
 body {
     font-family: 'Comfortaa', cursive; /*fonte*/
     margin: 0;
@@ -11,28 +16,191 @@ body {
     font-size: 1.4rem;
     background-color: var(--cor-primaria);
     text-align: center;
+    height: 100%;
+}
+
+*{
+    font-family:'Comfortaa', cursive;
+    box-sizing: border-box;
 }
 
 /*Cabecalho*/
 
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10%;
+
+}
+
+.cabecalho img{
+    width: 200px;
+    height: 200px;
+    justify-self: flex-start;
+}
+ 
 h1{
     font-size: 3.4rem;
     line-height: 130%;
+    
 }
 
+hr{
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    height: 2px;
+    width: 80%;
+}
+
+#dividerContainer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    min-width: 220px;
+}
+
+form >*:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.form-wrapper img{
+    flex: 1;
+    margin-left: 10px;
+    max-width: 400px;
+    height: auto;
+    
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+#entre-em-contato{
+    margin-top: -30px;
+}
+
+.modal{
+
+    background: #591623;
+    position: absolute;
+    width: max(320px, min(720px, 55vw));
+    padding: 10rem;
+    z-index: 2;
+    
+}
+.modal-content{
+    padding: 0 0px;
+  
+}
+.modal-content img{
+    
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #D9B19A;
+}
+            
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+input{
+    /* Rectangle 6 */
+    font-size: 1.1em;
+    
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+
+background: #D9B19A
+}
+
+#cadastro{   
+    font-size: 1.1em;
+    color: #D9B19A;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+
+background: #8C3B3B;
+}
+
+#pedido{   
+    font-size: 1.5em;
+    color:#773333;
+    padding: 20px 40px;
+    outline: none;
+    border: none;
+
+background: #D9B19A;
+}
+
+
+ul {
+    padding-left:0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+ 
+
+}
+li > div {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    
+  }
+
+#empresa {
+    font-size: 3.5em;
+}
 /*Principal*/
 
 .principal .quem-somos{
     background: #8C5E4D;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.principal .quem-somos .informacoes{
-    width: 50%;
-}
+
 
 .principal .quem-somos .imagem{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 500px;
+    
 }
 
 .principal .quem-somos .informacoes .titulo{
@@ -47,4 +215,56 @@ h1{
 
 /*Rodape*/
 
-/*asdasdsad*/ 
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #412f46 transparent;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e5cbb2;
+    border-radius: 10px;
+    border: 3px solid #591623;
+  }
+
+  @media screen and (max-width: 780px) {
+    .cabecalho img{
+        display: none;
+        justify-self: flex-start;
+    }
+    .menu{
+        font-size: 20px;
+        top: 0;
+        left: 40;
+        align-self: flex-end;
+ 
+    }
+    .cabecalho{
+    display: table-row-group;
+    align-items: center;
+    justify-items: center;
+    }
+    #pedido{   
+        font-size: 1.5em;
+        color:#773333;
+        padding: 15px 30px;
+        outline: none;
+        border: none;
+        
+    background: #D9B19A;
+    }
+
+  }
+
+  
