@@ -30,7 +30,7 @@
                 
                     <li>
                         <div>
-                        <a id = "galery" href="#galeria" class="nav-item">Galeria</a>
+                        <a id = "galery" href="#galeria" class="nav-item">Imóveis</a>
                     </div>
                     </li>
                 
@@ -56,8 +56,22 @@
                         <form id = "cadastro-form">
                             <input type="text" class="input" placeholder="Nome">
                             <input id = email type="email" class="input" placeholder="Email">
+                            <input id="telefone" type="tel" class="input" placeholder="(xx) xxxxx-xxxx" maxlength="15">
+                            <input id="num_compras" type="number" min="0" class="input" placeholder="Quantidade de compras">
+                            <input id="area_externa" type="text" min="0"class="input" placeholder="Area externa">
+                            <div class="radio-div">
+                                <input id="radio2" type="radio" class="radio" name="compra-aluguel">
+                                <label class="label" for="radio1">Aluguel</label>
+                                <input id="radi2" type="radio" class="radio"  name="compra-aluguel ">
+                                <label class="label" for="radio2">Compra</label>
+                            </div>
+                            
+                            
                             <button id="cadastro" class="button">Cadastrar </button>
                         </form>
+
+                        </div>
+                
                         
                         <img src="./src/imagem/logo.png" alt="logo" class="imagem">
                        
@@ -68,7 +82,7 @@
 
         
 
-        <button id="pedido" class="button">PEDIDO</button>
+        <button id="pedido" class="button">Pedido</button>
 
     </header>
     <div id="dividerContainer"><hr/></div>
@@ -79,13 +93,30 @@
         <section class ="quem-somos">
             <div class="informacoes">
                 <h2 class="titulo">Quem Somos</h2>
-                <p class="texto">Prestamos serviço de locação de imóveis em João Monlevade há mais de 10 anos.<br> 
-                Garantimos a sua segurança em todas as etapas do processo de aluguel e venda.
+                <p class="texto">Prestamos serviço de locação de imóveis em João Monlevade há mais de 10 anos.
+                Garantimos a sua segurança em todas as etapas do processo de aluguel e venda, assim como resolvemos todos os seu problemas
+                para você e seu negócio. <br><br>
+                Contamos com você!
             </p>
             </div>
             
             <img src="./src/imagem/image1.webp" class="imagem" alt="personagem">
         </section>
+
+        <section class ="galeria">
+            <div class="informacoes">
+                <h1 class="titulo">Tipos de imóveis</h1>
+            </div>
+            
+            <div class="portfolio">
+                
+
+                <img src="./src/imagem/image1.webp" class="imagem">
+
+            </div>
+            
+        </section>
+
     </main>
     
 
