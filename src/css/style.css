@@ -206,17 +206,17 @@ background: #D9B19A;
 
 
 .cabecalho ul {
-    margin-left: -50px;
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     font-size: 1em;
- 
+    padding-left: 0;
 
 }
 .cabecalho  li > div {
     width: 150px;
-    margin: 10px;
+
     text-align: center;
     
   }
@@ -331,42 +331,33 @@ background: #D9B19A;
 .suporte .icones > div{
     display: flex;
     justify-content: space-evenly;
-    width: 25%;
+    min-width: 300px;
 
 }
 /*Rodape*/
 
-.rodape ul {
-
+.rodape .navegacao .menu {
+    justify-content: space-evenly;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     font-size: 1em;
- 
 
 }
-    
-.rodape > div{
-    display: flex;
-    justify-content: center;
-    align-items: center
 
-}
+
 
 .rodape img{
     width: 100px;
     height: 100px;
     justify-self: flex-start;
 }
-.rodape div{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
+
 .rodape .navegacao > ul{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    padding-left: 0;
 }
 .rodape nav{
     width: 100%;
@@ -435,9 +426,31 @@ background: #D9B19A;
         
       
         font-size: small;
-      
-}
+    
+    }   
 
-  }
+    .galeria .portfolio .imagem{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 4rem;
+    }
+    
+    .galeria .portfolio div a{
+    
+    display: none;
+    
+    }     
+    .rodape .navegacao .menu {
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+
+    }
+
+}
 
   
