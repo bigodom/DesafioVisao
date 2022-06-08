@@ -1,6 +1,7 @@
 :root {
     font-size: 62.5%; /*10px*/
     --cor-primaria: #591623;/*cor de fundo*/
+
     height: auto;
 }
 html{
@@ -16,7 +17,11 @@ body {
     font-size: 1.4rem;
     background-color: var(--cor-primaria);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
     height: 100%;
+   
 }
 
 *{
@@ -36,8 +41,8 @@ body {
 }
 
 .cabecalho img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     justify-self: flex-start;
 }
  
@@ -63,12 +68,40 @@ hr{
     justify-content: center;
 }
 
-form{
+/* Modal e form para modal */
+
+#cadastro-form{
     display: flex;
     flex-direction: column;
     flex: 2;
     min-width: 220px;
 }
+
+.radio-div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.radio-div > *:not(:last-child){
+    margin-right: 15px;
+}
+
+.radio-div .label{
+        
+        font-size: medium;
+      
+}
+
+.radio-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.radio-div .radio{
+    width: 1em;
+}
+
 
 form >*:not(:last-child){
     margin-bottom: 15px;
@@ -81,6 +114,7 @@ form >*:not(:last-child){
     height: auto;
     
 }
+
 
 .modal-container{
     width: 100vw;
@@ -108,7 +142,7 @@ form >*:not(:last-child){
     background: #591623;
     position: absolute;
     width: max(320px, min(720px, 55vw));
-    padding: 10rem;
+    padding: 6em 5em 2rem 5em;
     z-index: 2;
     
 }
@@ -117,8 +151,13 @@ form >*:not(:last-child){
   
 }
 .modal-content img{
-    
+    flex: 1;
+    max-width: 400px;
+    height: auto;
 }
+
+
+/* Fim do modal e seus conteudos */
 
 .nav-item{
     text-decoration: none;
@@ -158,7 +197,7 @@ background: #8C3B3B;
 #pedido{   
     font-size: 1.5em;
     color:#773333;
-    padding: 20px 40px;
+    padding: 15px 20px;
     outline: none;
     border: none;
 
@@ -166,26 +205,32 @@ background: #D9B19A;
 }
 
 
-ul {
-    padding-left:0;
+.cabecalho ul {
+    margin-left: -50px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    font-size: 2em;
+    font-size: 1em;
  
 
 }
-li > div {
-    width: 200px;
+.cabecalho  li > div {
+    width: 150px;
     margin: 10px;
     text-align: center;
     
   }
 
-#empresa {
-    font-size: 3.5em;
-}
 /*Principal*/
+
+/*Quem somos*/
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .principal .quem-somos{
     background: #8C5E4D;
@@ -194,27 +239,146 @@ li > div {
 }
 
 
-
-.principal .quem-somos .imagem{
+.quem-somos .imagem{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-height: 500px;
+    max-height: 350px;
     
 }
 
-.principal .quem-somos .informacoes .titulo{
-    font-size: 50px;
+.quem-somos .informacoes .titulo{
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
-.principal .quem-somos .informacoes .texto{
+.quem-somos .informacoes .texto{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/*Galeria*/
+
+.informacoes .texto{
     font-size: 20px;
     line-height: 1.5;
 }
 
+
+.galeria .informacoes .titulo{
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
+
+.galeria .portfolio{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeria .portfolio div{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.galeria .portfolio div a{
+    
+    font-size: 1.5em;
+    
+}   
+
+
+.galeria .portfolio .imagem{
+    width: 49.7%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+/*Agendamentos*/
+
+
+
+.depoimentos span{
+    line-height: 5rem;
+}
+
+.depoimentos .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.depoimentos .informacoes .texto div{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.suporte .imagem{
+    display: cover;
+    width: 50px;
+    height: 40px;
+    
+}
+.suporte .icones{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suporte .icones > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+
+}
 /*Rodape*/
 
+.rodape ul {
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+ 
+
+}
+    
+.rodape > div{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.rodape img{
+    width: 100px;
+    height: 100px;
+    justify-self: flex-start;
+}
+.rodape div{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.rodape .navegacao > ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.rodape nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
+
+.rodape p{  
+    font-size: xx-small;
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -239,9 +403,9 @@ li > div {
   }
 
   @media screen and (max-width: 780px) {
+
     .cabecalho img{
         display: none;
-        justify-self: flex-start;
     }
     .menu{
         font-size: 20px;
@@ -251,19 +415,28 @@ li > div {
  
     }
     .cabecalho{
-    display: table-row-group;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-items: center;
+
     }
     #pedido{   
         font-size: 1.5em;
         color:#773333;
-        padding: 15px 30px;
+        padding: 15px 20px;
         outline: none;
         border: none;
         
     background: #D9B19A;
     }
+
+    .radio-div .label{
+        
+      
+        font-size: small;
+      
+}
 
   }
 
