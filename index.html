@@ -36,7 +36,7 @@
                 
                     <li>
                         <div>
-                      <a id = "agenda" href="#agendamento" class="nav-item">Agendamento</a>
+                      <a id = "depoimentos" href="#Depoimentos" class="nav-item">Depoimentos</a>
                     </div>
                     </li>
                 
@@ -57,13 +57,17 @@
                             <input type="text" class="input" placeholder="Nome">
                             <input id = email type="email" class="input" placeholder="Email">
                             <input id="telefone" type="tel" class="input" placeholder="(xx) xxxxx-xxxx" maxlength="15">
-                            <input id="num_compras" type="number" min="0" class="input" placeholder="Quantidade de compras">
+                            <input id="num_compras" type="number" min="0" class="input" placeholder="Número de compras">
                             <input id="area_externa" type="text" min="0"class="input" placeholder="Area externa">
                             <div class="radio-div">
-                                <input id="radio2" type="radio" class="radio" name="compra-aluguel">
-                                <label class="label" for="radio1">Aluguel</label>
-                                <input id="radi2" type="radio" class="radio"  name="compra-aluguel ">
-                                <label class="label" for="radio2">Compra</label>
+                                <div class="radio-wrapper">
+                                    <input id="radio2" type="radio" class="radio" name="compra-aluguel">
+                                    <label class="label" for="radio1">Aluguel</label>
+                                </div>
+                                <div class="radio-wrapper">
+                                    <input id="radi2" type="radio" class="radio"  name="compra-aluguel">
+                                    <label class="label" for="radio2">Compra</label>
+                                </div>
                             </div>
                             
                             
@@ -110,32 +114,113 @@
             
             <div class="portfolio">
                 
-
+                <img id="casa" src="./src/imagem/image1.webp" class="imagem">
+                <div>
+                    <a>As melhores casas, em todas as faixas de preços.<br> Apenas o melhor para você</a>
+                </div>
+            </div>
+        
+            <div class="portfolio">
+                <div>
+                    <a>Os apartamentos mais buscados;<br> Ótimas localizações.<br/></a>
+                </div>
                 <img src="./src/imagem/image1.webp" class="imagem">
-
+                
             </div>
             
         </section>
 
     </main>
-    
 
-    <footer class="rodape">
-        <nav class="navegacao">
-            <div class="redes-sociais">
+    <section class ="depoimentos">
+        <div class="informacoes">
+            <h1 class="titulo">Depoimentos dos clientes</h1>
+        </div>
+           
+                <span>"As melhores casas, em todas as faixas de preços." - Eu<br/>
+                    "Apenas o melhor para você." - Eu tbm<br/>
+                    "Os apartamentos mais buscados." - Eu dnovo<br/>
+                    "Ótimas localizações." - Eukkj<br/> 
+                </span>
+                
+    </section>
+
+    
+    <section class ="suporte">
+        <div class="informacoes">
+            <h1 class="titulo">Contato</h1>
+        </div>
+         
+        <div class="icones">
+            <div>
+               
                 <a href="#" class="rede-social">
+                    <img src="./src/imagem/image1.webp" class="imagem">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" class="rede-social">
+                    <img src="./src/imagem/image1.webp" class="imagem">
                     <i class="fab fa-instagram-square"></i>
                 </a>
                 <a href="#" class="rede-social">
+                    <img src="./src/imagem/image1.webp" class="imagem">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="rede-social">
+                    <img src="./src/imagem/image1.webp" class="imagem">
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
-        </nav>
 
-        <p class="copyright">Todos os direitos reservados</p>
+        </div>
+        
+        
+    </section>
+
+    <footer class="rodape">
+
+
+        
+      
+
+
+            <a id = "nomeEmpresa" href="">
+                <img src="./src/imagem/logo.png" alt="logo" class="imagem">
+                <!-- <span class="empresa">Sabrina Imóveis</span> -->
+            </a>
+           <div>
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li>
+                       
+                            <a id = "quem" href="#quem-somos" class="nav-item">Quem Somos</a>
+                        
+                       
+                        </li>
+                    
+                        <li>
+                         
+                            <a id = "galery" href="#galeria" class="nav-item">Imóveis</a>
+                      
+                        </li>
+                    
+                        <li>
+                           
+                          <a id = "depoimentos" href="#Depoimentos" class="nav-item">Depoimentos</a>
+                     
+                        </li>
+                    
+                        <li>
+                         
+                            <a id = "sup" href="#suporte" class="nav-item">Suporte</a>
+                       
+                        </li>
+    
+                </ul>
+            </nav>
+
+    </div>
+    <p class="copyright">Todos os direitos reservados</p>
     </footer>
     <script src="./src/script.js"></script>
 </body>

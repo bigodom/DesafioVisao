@@ -2,8 +2,11 @@
     font-size: 62.5%; /*10px*/
     --cor-primaria: #591623;/*cor de fundo*/
 
+    height: auto;
 }
-
+html{
+    height: 100%;
+}
 
 body {
     font-family: 'Comfortaa', cursive; /*fonte*/
@@ -14,6 +17,10 @@ body {
     font-size: 1.4rem;
     background-color: var(--cor-primaria);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    height: 100%;
    
 }
 
@@ -72,21 +79,23 @@ hr{
 
 .radio-div{
     display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
 
+.radio-div > *:not(:last-child){
+    margin-right: 15px;
 }
 
 .radio-div .label{
         
-        float: left;
-        clear: none;
-        display: block;
-        padding: 0px 2em 0px 8px;
-        margin-top: 2px;
         font-size: medium;
       
+}
+
+.radio-wrapper{
+    display: flex;
+    align-items: center;
 }
 
 .radio-div .radio{
@@ -196,7 +205,7 @@ background: #D9B19A;
 }
 
 
-ul {
+.cabecalho ul {
     margin-left: -50px;
     list-style: none;
     display: flex;
@@ -205,7 +214,7 @@ ul {
  
 
 }
-li > div {
+.cabecalho  li > div {
     width: 150px;
     margin: 10px;
     text-align: center;
@@ -216,15 +225,19 @@ li > div {
 
 /*Quem somos*/
 
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .principal .quem-somos{
     background: #8C5E4D;
-    height: 350px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-.principal{
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
+
 
 .quem-somos .imagem{
     width: 100%;
@@ -251,26 +264,121 @@ li > div {
     line-height: 1.5;
 }
 
-.galeria .informacoes .titulo{
 
-    margin-bottom: 50px;
+.galeria .informacoes .titulo{
+    padding-top: 1em;
+    margin-bottom: 2em;
 }
 
 .galeria .portfolio{
-    display: grid;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
+.galeria .portfolio div{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.galeria .portfolio div a{
+    
+    font-size: 1.5em;
+    
+}   
+
+
 .galeria .portfolio .imagem{
-    width: 45%;
-    height: 90%;
+    width: 49.7%;
+    height: auto;
     object-fit: cover;
-    margin-left: 2em ;
+    margin-bottom: 3rem;
+}
+
+/*Agendamentos*/
+
+
+
+.depoimentos span{
+    line-height: 5rem;
+}
+
+.depoimentos .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.depoimentos .informacoes .texto div{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.suporte .imagem{
+    display: cover;
+    width: 50px;
+    height: 40px;
+    
+}
+.suporte .icones{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suporte .icones > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+
+}
+/*Rodape*/
+
+.rodape ul {
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+ 
+
+}
+    
+.rodape > div{
+    display: flex;
+    justify-content: center;
+    align-items: center
 
 }
 
-/*Rodape*/
+.rodape img{
+    width: 100px;
+    height: 100px;
+    justify-self: flex-start;
+}
+.rodape div{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.rodape .navegacao > ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.rodape nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
 
+.rodape p{  
+    font-size: xx-small;
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -295,6 +403,7 @@ li > div {
   }
 
   @media screen and (max-width: 780px) {
+
     .cabecalho img{
         display: none;
     }
