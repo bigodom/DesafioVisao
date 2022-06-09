@@ -282,7 +282,35 @@ background: #D9B19A;
 }
 
 .principal .paineis .projeto1{
-    background-image: ;
+    background-image: url('../imagem/image1.webp');
+}
+
+.principal .paineis .projeto2{
+    background-image: url('../imagem/image1.webp');
+}
+
+.principal .paineis .projeto3{
+    background-image: url('../imagem/image1.webp');
+}
+
+.principal .paineis .seta{
+    background: url('../imagem/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.principal .paineis .seta.btn-voltar{
+    left: 2em;
+    transform: rotateY(180deg);
+}
+.principal .paineis .seta.btn-avancar{
+    left: 60em;
 }
 
 /*Galeria*/
