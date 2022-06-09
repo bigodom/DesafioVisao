@@ -34,3 +34,4 @@ pedido.addEventListener('click', () => iniciaModal('modal-cadastro'));
 // e mostrar a proxima imagem
 // a imagem atal começa no 0, clicando no avançar adiciona +1
 
+const imagensPainel = document.querySelectorAll('')
