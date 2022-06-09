@@ -28,3 +28,9 @@ pedido.addEventListener('click', () => iniciaModal('modal-cadastro'));
 
 
 //iniciaModal('modal-cadastro');
+
+
+// quando clicar a seta avançar temos que esconder todas as imagens
+// e mostrar a proxima imagem
+// a imagem atal começa no 0, clicando no avançar adiciona +1
+
