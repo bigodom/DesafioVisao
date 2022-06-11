@@ -293,6 +293,10 @@ background: #D9B19A;
     background-image: url('../imagem/image1.webp');
 }
 
+.principal .paineis .imagem-painel.mostrar{
+    opacity: 1;
+}
+
 .principal .paineis .seta{
     background: url('../imagem/seta.png');
     background-repeat: no-repeat;
@@ -311,6 +315,7 @@ background: #D9B19A;
 }
 .principal .paineis .seta.btn-avancar{
     left: 60em;
+
 }
 
 /*Galeria*/
@@ -498,7 +503,7 @@ background: #D9B19A;
     
     .galeria .portfolio div a{
     
-    display: none;
+    
     
     }     
     .rodape .navegacao .menu {
