@@ -315,7 +315,15 @@ background: #D9B19A;
 }
 .principal .paineis .seta.btn-avancar{
     left: 60em;
+}
 
+@media(max-width: 1200px){
+    .principal .paineis .seta.btn-voltar{
+        left: 1em;
+    }
+    .principal .paineis .seta.btn-avancar{
+        left: 23em;
+    }
 }
 
 /*Galeria*/
@@ -383,7 +391,7 @@ background: #D9B19A;
 .suporte .imagem{
     display: cover;
     width: 50px;
-    height: 40px;
+    height: 50px;
     
 }
 .suporte .icones{
@@ -501,10 +509,8 @@ background: #D9B19A;
         margin-bottom: 4rem;
     }
     
-    .galeria .portfolio div a{
-    
-    
-    
+    .galeria .portfolio .paineis{
+
     }     
     .rodape .navegacao .menu {
     justify-content: space-evenly;
