@@ -302,8 +302,7 @@ background: #D9B19A;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 50px;
-    width: 50px;
+    height: 10%;
     position: absolute;
     text-indent: 100%;
     overflow: hidden;
@@ -317,14 +316,6 @@ background: #D9B19A;
     left: 60em;
 }
 
-@media(max-width: 1200px){
-    .principal .paineis .seta.btn-voltar{
-        left: 1em;
-    }
-    .principal .paineis .seta.btn-avancar{
-        left: 23em;
-    }
-}
 
 /*Galeria*/
 
