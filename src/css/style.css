@@ -24,10 +24,7 @@ body {
    
 }
 
-*{
-    font-family:'Comfortaa', cursive;
-    box-sizing: border-box;
-}
+
 
 /*Cabecalho*/
 
@@ -66,6 +63,11 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav-item{
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Modal e form para modal */
@@ -209,16 +211,17 @@ background: #D9B19A;
 
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+
     font-size: 1em;
     padding-left: 0;
+    margin: 10px;
 
 }
 .cabecalho  li > div {
-    width: 150px;
 
     text-align: center;
-    
+    margin: calc(2em + 1vw);
+    justify-content: space-between;
   }
 
 /*Principal*/
@@ -249,12 +252,15 @@ background: #D9B19A;
 
 .quem-somos .informacoes .titulo{
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
 .quem-somos .informacoes .texto{
     font-size: 15px;
     line-height: 1.5;
+}
+
+.quem-somos .informacoes{
+    margin: auto;
 }
 
 /*Painel*/
@@ -326,8 +332,8 @@ background: #D9B19A;
 
 
 .galeria .informacoes .titulo{
-    padding-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 2.8em;
+    margin-bottom: 0;
 }
 
 .galeria .portfolio{
@@ -358,6 +364,7 @@ background: #D9B19A;
     height: auto;
     object-fit: cover;
     margin-bottom: 3rem;
+    margin: 0;
 }
 
 /*Agendamentos*/
@@ -398,6 +405,16 @@ background: #D9B19A;
     min-width: 300px;
 
 }
+
+.suporte .suporte-texto{
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.suporte{
+    margin-bottom: 40px;
+}
+
 /*Rodape*/
 
 .rodape .navegacao .menu {
@@ -457,11 +474,8 @@ background: #D9B19A;
     border: 3px solid #591623;
   }
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 880px) {
 
-    .cabecalho img{
-        display: none;
-    }
     .menu{
         font-size: 20px;
         top: 0;
@@ -470,12 +484,16 @@ background: #D9B19A;
  
     }
     .cabecalho{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
-
+    justify-content: center;
     }
+
+    .nav-item{
+        display: none;
+    }
+
     #pedido{   
         font-size: 1.5em;
         color:#773333;
@@ -500,9 +518,6 @@ background: #D9B19A;
         margin-bottom: 4rem;
     }
     
-    .galeria .portfolio .paineis{
-
-    }     
     .rodape .navegacao .menu {
     justify-content: space-evenly;
     flex-direction: column;
@@ -514,5 +529,12 @@ background: #D9B19A;
     }
 
 }
+/*arrumando detalhes*/
 
-  
+.titulo-depoimentos{
+    margin-top: 0;
+}
+
+h2{
+    margin-bottom: 50px;
+}
