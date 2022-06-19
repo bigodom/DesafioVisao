@@ -535,6 +535,14 @@ background: #D9B19A;
     margin-top: 0;
 }
 
+
+
 h2{
     margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.depoimentos .citacoes{
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
