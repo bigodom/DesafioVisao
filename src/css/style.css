@@ -494,6 +494,10 @@ background: #D9B19A;
         display: none;
     }
 
+    li{
+        display: none;
+    }
+
     #pedido{   
         font-size: 1.5em;
         color:#773333;
